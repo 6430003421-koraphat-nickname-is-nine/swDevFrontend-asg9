@@ -3,7 +3,7 @@ import TopMenuItem from "./TopMenuItem";
 
 export default function TopMenu() {
   return (
-    <div className=" w-full h-[120px] flex-row flex  bg-lime-100/50 items-center  justify-end px-[48px]">
+    <div className=" w-full h-[120px] flex-row flex  bg-lime-100/50 items-center justify-end px-[48px]">
       <TopMenuItem title="Booking" pageRef="/booking"></TopMenuItem>
       <Image
         src={"/img/logo_lime.png"}

@@ -5,7 +5,7 @@ import InteractiveCard from "./InteractiveCard";
 import Image from "next/image";
 import { Rating } from "@mui/material";
 import { useState } from "react";
-import getHospitals from "@/lib/getHospitals";
+import getHospitals from "@/libs/getHospitals";
 
 export default function Card({
   hospitalName,

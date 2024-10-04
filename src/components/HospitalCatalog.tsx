@@ -5,7 +5,7 @@ import Link from "next/link";
 export default async function HospitalCatalog({
   hospitalsJson,
 }: {
-  hospitalsJson: HospitalJson;
+  hospitalsJson: Promise<HospitalJson>;
 }) {
   const hosJsonReady = await hospitalsJson;
   return (

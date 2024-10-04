@@ -1,11 +1,12 @@
 import CardPanel from "@/components/CardPanel";
 import HospitalCatalog from "@/components/HospitalCatalog";
-import getHospitals from "@/lib/getHospitals";
+import { HospitalJson, HospitalItem } from "baseApp/interface";
+import getHospitals from "@/libs/getHospitals";
 import { Suspense } from "react";
 import { LinearProgress } from "@mui/material";
 
 export default async function hospitalInfo() {
-  const hospitals = await getHospitals();
+  const hospitals: Promise<HospitalJson> = await getHospitals();
   return (
     <main>
       {/* <CardPanel /> */}
